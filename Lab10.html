@@ -44,7 +44,7 @@ html, body {
     });
 
     var CounterParent = React.createClass({
-      getDefaultProps: function(){
+     getDefaultProps: function(){
         console.log("getDefaultProps: Default prop time!");
         return {};
       },
@@ -74,6 +74,7 @@ html, body {
       componentWillUnmount: function() {
           console.log("componentWillUnmount: Component is about to be removed from the DOM!");
       },
+	   
       shouldComponentUpdate: function(newProps, newState) {
         console.log("shouldComponentUpdate: Should component update?");
 
